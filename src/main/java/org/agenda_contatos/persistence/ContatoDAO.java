@@ -1,4 +1,4 @@
-package org.agenda_contatos.model.services;
+package org.agenda_contatos.persistence;
 
 import org.agenda_contatos.model.entities.Contato;
 import org.agenda_contatos.utils.HibernateSessionFactory;
