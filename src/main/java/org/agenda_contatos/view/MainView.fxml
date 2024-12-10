@@ -23,7 +23,7 @@
         <items>
           <Button fx:id="btnAdicionar" mnemonicParsing="false" onAction="#onBtnAdicionarAction" prefWidth="120.0" text="Novo Contato" />
             <Button fx:id="btnEditar" disable="true" mnemonicParsing="false" onAction="#onBtnEditarAction" prefWidth="120.0" text="Editar Selecionado" />
-            <Button fx:id="btnExcluir" disable="true" mnemonicParsing="false" prefWidth="120.0" text="Excluir Selecionado" />
+            <Button fx:id="btnExcluir" disable="true" mnemonicParsing="false" onAction="#onBtnExcluirAction" prefWidth="120.0" text="Excluir Selecionado" />
         </items>
       </ToolBar>
       <TableView fx:id="tbContato" prefWidth="200.0">

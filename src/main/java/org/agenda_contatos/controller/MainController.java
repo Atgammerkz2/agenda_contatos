@@ -109,6 +109,15 @@ public class MainController implements Initializable {
         updateTableView();
     }
 
+    @FXML
+    public void onBtnExcluirAction() {
+        if(Alerta.solicitarConfirmacao("Confirmação de Exclusão", "Tem certeza que deseja excluir o contato selecionado?")){
+            contatoService.removeContato(this.contato.getId());
+            this.contato = null;
+            updateTableView();
+        }
+    }
+
     public void exibirModal(String title, String arquivoFXML){
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
